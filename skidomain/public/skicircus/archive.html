@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/PR-html40/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Cardit Webcam 24 Hour Archive</TITLE>
+<META name="author" content="Robbert Eggermont">
+<META name="description" content="Cardit Webcam">
+<META name="keywords" content="cardit,ce,et,its,tudelft,webcam,indycam">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<SCRIPT type="text/javascript">
+<!-- This script is (c) 1999,2003 R.Eggermont (robbert@ict.ewi.tudelft.nl)
+
+// Usage of (part of) this script is allowed only when the script as a whole
+// is included unmodified (including the copyright line and these remarks).
+
+var images = new Array (
+  "http://cmspic.feratel.at/cms/1/05275_3fe54dc8.jpg",
+  "http://cmspic.feratel.at/cms/1/05275_3fe554bc.jpg",
+  "http://cmspic.feratel.at/cms/1/05275_3fe569e6.jpg",
+  "http://cmspic.feratel.at/cms/1/05275_3fe577f8.jpg",
+  "http://cmspic.feratel.at/cms/1/05275_3fe58608.jpg",
+  "http://cmspic.feratel.at/cms/1/05275_3fe5a91e.jpg",
+  "http://cmspic.feratel.at/cms/1/05275_3fe5b036.jpg",
+  "http://cmspic.feratel.at/cms/1/05275_3fe5b72d.jpg"
+);
+
+function refresh(index) {
+  // Image refresh function (display next image in sequence)
+  
+  if ( index >= images.length ) { index = 0; }
+  document.webcam.src = images[index];
+  index++;
+
+  // Call the refresh function after specified refresh interval
+  setTimeout("refresh(" + index + ")",
+	parseInt(document.form.refresh[document.form.refresh.selectedIndex].value) * 1000);
+}
+
+// -->
+</SCRIPT>
+</HEAD>
+<BODY bgcolor="white" onload="setTimeout('refresh(0)', 2000)">
+<SCRIPT language="Javascript">
+<!--
+
+document.write("-- START --<BR>\n");
+
+var Date1 = new Date(2003,11,21,8,37,44).getTime();
+var Date2 = parseInt("3fe54dc8", 16)*1000;
+var Text2 = new Date(Date2);
+
+document.write("Date1 = " + Date1 + "<BR>\n");
+document.write("Date2 = " + Date2 + "<BR>\n");
+document.write("Date2 = " + Text2 + "<BR>\n");
+
+//Date1 += 30*1000;
+//var Date2 = parseInt("3fe54dc8", 16);
+
+document.write("-- FINISH --<BR>\n");
+
+// -->
+</SCRIPT>
+<CENTER>
+Make sure you give your browser enough time to load every picture completely
+by selecting an high enough number of seconds per frame.
+<P>
+<FORM name="form">
+Seconds per frame:
+<SELECT name="refresh">
+<OPTION VALUE="0">0
+<OPTION VALUE="1">1
+<OPTION VALUE="2" SELECTED>2
+<OPTION VALUE="3">3
+<OPTION VALUE="4">4
+<OPTION VALUE="5">5
+<OPTION VALUE="6">6
+<OPTION VALUE="7">7
+<OPTION VALUE="8">8
+<OPTION VALUE="9">9
+<OPTION VALUE="10">10
+<OPTION VALUE="15">15
+<OPTION VALUE="20">20
+<OPTION VALUE="25">25
+<OPTION VALUE="30">30
+<OPTION VALUE="35">35
+<OPTION VALUE="40">40
+<OPTION VALUE="45">45
+<OPTION VALUE="50">50
+<OPTION VALUE="55">55
+<OPTION VALUE="60">60
+</SELECT>
+</FORM>
+<IMG name="webcam" src="http://cmspic.feratel.at/cms/1/05275_3fe54dc8.jpg" width="356" height="284" border="0" vspace="0" hspace="0" alt="24 Hour Webcam Archive!">
+</CENTER>
+</BODY>
+</HTML>
