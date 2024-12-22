@@ -36,7 +36,12 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 .item	{ background-color: #F8F8F8; background-image: url(background.jpg); border: 1px solid #E3E3E3; margin: 10px; padding: 4px; text-align: left; }
 .item a img	{ border: 1px solid black; }
 .header	{ text-align: left; color: #0066CC; font-weight: bolder; text-align: left; }
+table	{ border-collapse: collapse; }
+table, td, th	{ border: 1px solid black; padding: 4px; }
 .links a	{ white-space: nowrap; }
+.top	{ vertical-align: top; }
+.left	{ text-align: left; }
+.center	{ text-align: center; }
 .address	{ font-size: 0.9em; font-style: italic; text-align: center; }
 .address address	{ display: inline; }
 .address a img	{ border-width: 0px; }
@@ -49,7 +54,7 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 <!-- Banner -->
 <div class="banner">
 <div class="title">
-<a class="name" name="Up" href="https://gitlab.tudelft.nl/robberteggermont/skidomain/les2alpes/">Les 2 Alpes</a> <img src="../images/f.gif" alt="France" width="45" height="36"> <a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">Ski Domain</a>
+<a class="name" id="Up" href="https://gitlab.tudelft.nl/robberteggermont/skidomain/les2alpes/">Les 2 Alpes</a> <img src="../images/f.gif" alt="France" width="45" height="36"> <a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">Ski Domain</a>
 </div>
 <div class="menu">
 <div class="up"><a href="http://www.les2alpes.com/">Official Website &gt;</a></div>
@@ -64,66 +69,49 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 <!-- Border -->
 <div class="content">
 
-<!-- Welcome -->
-<div class="intro">
-<i>Welcome to <a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/les2alpes/"><b>Les 2 Alpes Ski Domain</b></a></i> - the index to all ski related information for Les 2 Alpes.
-<br>I try to keep this site updated with the latest information, please support me in this effort by <a href="mailto:R.Eggermont@hccnet.nl">reporting</a> new resources and/or outdated links.
-</div>
-<!-- Welcome -->
-
 <!-- Item -->
 <div class="item">
-<div class="up">[ <a name="Information" href="#Up">Up</a> ]</div>
-<div class="header">Information</div>
-<hr>
-<!-- Content -->
-<!-- Content -->
-</div>
-<!-- Item -->
-
-<!-- Item -->
-<div class="item">
-<div class="up">[ <a name="Links" href="#Up">Up</a> ]</div>
-<div class="header">Links</div>
+<div class="up">[ <a id="Information" href="#Up">Up</a> ]</div>
+<div class="header">Ski Information</div>
 <hr>
 <!-- Content -->
 <!-- Information table #1 -->
-<table cellspacing="0" cellpadding="4" border="1" class="links">
+<table class="links">
 <thead>
-<tr valign="top" class="menu">
-<td align="left"><b>Stations</b><br>Tourist Offices</td>
-<td align="center"><b>Weather Forecasts</b>
+<tr class="top menu">
+<td class="left"><strong>Stations</strong><br>Tourist Offices</td>
+<td class="center"><strong>Weather Forecasts</strong>
 <br><a href="http://www.metcheck.com/V40/UK/FREE/snow.asp">MetCheck</a>
 <br><a href="http://www.snow-forecast.com/">Snow Forecast</a>
 </td>
-<td align="center"><b>Ski Information</b>
+<td class="center"><strong>Ski Information</strong>
 <br><a href="http://www.france-montagnes.com/">France Montagnes</a>
 <br><a href="http://www.skiinfo.fr/">Skiinfo</a>
 <br><a href="http://www.skiplan.com/">Skiplan</a>
 </td>
-<td align="left"><b>Links</b></td>
+<td class="left"><strong>Links</strong></td>
 </tr>
 </thead>
 <tbody>
 <tr><!-- Les 2 Alpes -->
-<td align="left">	<a href="http://www.les2alpes.com/">Les 2 Alpes</a></td>
-<td align="center">	<a href="http://www.snow-forecast.com/resorts/Les-Deux-Alpes/6day/mid">6-Day</a>,
+<td class="left">	<a href="http://www.les2alpes.com/">Les 2 Alpes</a></td>
+<td class="center">	<a href="http://www.snow-forecast.com/resorts/Les-Deux-Alpes/6day/mid">6-Day</a>,
 			<a href="http://www.metcheck.com/V40/UK/FREE/snow_forecast_7.asp?resortID=106">7-Day</a>,
 			<a href="http://france.meteofrance.com/france/montagne?MONTAGNE_PORTLET.path=montagneprevisionville/382531">9-Day</a>,
 			<a href="http://www.snow-forecast.com/maps/static/alps/3days">Maps</a></td>
-<td align="center">	<a href="http://www.les2alpes.com/meteo-enneigement-les-2-alpes.html">Snow &amp; Ski</a>,
+<td class="center">	<a href="http://www.les2alpes.com/meteo-enneigement-les-2-alpes.html">Snow &amp; Ski</a>,
 			<a href="http://www.france-montagnes.com/station/les-2-alpes/bulletins">Snow &amp; Ski</a>,
 			<a href="http://www.skiinfo.fr/enneigement-bulletin-neige/les-2-alpes-EFR2ALPES-100-fr.jhtml">Snow &amp; Ski</a>,
 			<a href="http://www.skiplan.com/skiplan/infostation.php?p_station=deux-alpes&amp;p_region=alpes&amp;p_pays=france&amp;p_stationformate=deux-alpes#meteo">Snow &amp; Ski</a></td>
-<td align="left">	<a href="http://www.sports-hiver.com/FR/Images/resort_media/planpistes/STATANMSM01380019/plan-skifrance.jpg">Ski Map</a>
+<td class="left">	<a href="http://www.sports-hiver.com/FR/Images/resort_media/planpistes/STATANMSM01380019/plan-skifrance.jpg">Ski Map</a>
 			(<a href="http://mariepiergosselin.files.wordpress.com/2011/05/plan_pistes_hiver_2010-2011.jpg">Large</a>),
 			<a href="http://www.skipass-2alpes.com/">Deux Alpes Loisirs</a></td>
 </tr>
 <tr><!-- La Grave - La Meije -->
-<td align="left">	<a href="http://www.lagrave-lameije.com/">La Grave - La Meije</a></td>
-<td align="center">	<a href="http://www.snow-forecast.com/resorts/LaGrave/6day/mid">6-Day</a></td>
-<td align="center">	<a href="http://www.la-grave.com/winter/advice_patrollers.php">Snow &amp; Ski</a></td>
-<td align="left">	<a href="http://www.la-grave.com/images/visuelles/157ko.jpg">Ski Map</a>
+<td class="left">	<a href="http://www.lagrave-lameije.com/">La Grave - La Meije</a></td>
+<td class="center">	<a href="http://www.snow-forecast.com/resorts/LaGrave/6day/mid">6-Day</a></td>
+<td class="center">	<a href="http://www.la-grave.com/winter/advice_patrollers.php">Snow &amp; Ski</a></td>
+<td class="left">	<a href="http://www.la-grave.com/images/visuelles/157ko.jpg">Ski Map</a>
 			(<a href="http://www.la-grave.com/images/visuelles/1900ko.pdf">Large</a>),
 			<a href="http://www.la-grave.com/">T&eacute;l&eacute;ph&eacute;riques des Glaciers de la Meije</a></td>
 </tr>
@@ -131,7 +119,7 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 </table>
 <!-- Information table #2 -->
 <p>
-<b>&Eacute;crins, Oisans, Is&egrave;re (38), Alpes du Nord, France</b> <img src="../images/f.gif" width="15" height="12" alt="France">
+<strong>&Eacute;crins, Oisans, Is&egrave;re (38), Alpes du Nord, France</strong> <img src="../images/f.gif" width="15" height="12" alt="France">
 </p>
 <ul>
 <li><a href="http://www.avalanche-net.com/enneigement/cartes/alpes-du-nord.php">Avalanche-net</a></li>
@@ -143,7 +131,7 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 
 <!-- Item -->
 <div class="item">
-<div class="up">[ <a name="Webcams" href="#Up">Up</a> ]</div>
+<div class="up">[ <a id="Webcams" href="#Up">Up</a> ]</div>
 <div class="header">Webcams</div>
 <hr>
 <!-- Content -->
@@ -158,7 +146,7 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 <div class="menu">
 <div class="up">[ <a href="#Up">Up</a> ]</div>
 <div class="back"><a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">&lt; Back</a></div>
-<a href="#Information">Ski Information</a> &middot; <a href="#Links">Links</a> &middot; <a href="webcams.html">Webcams</a>
+<a href="#Information">Ski Information</a> &middot; <a href="webcams.html">Webcams</a>
 </div>
 </div>
 <!-- Border -->

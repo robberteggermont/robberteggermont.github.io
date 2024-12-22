@@ -36,11 +36,16 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 .item	{ background-color: #F8F8F8; background-image: url(background.jpg); border: 1px solid #E3E3E3; margin: 10px; padding: 4px; text-align: left; }
 .item a img	{ border: 1px solid black; }
 .header	{ text-align: left; color: #0066CC; font-weight: bolder; text-align: left; }
+table	{ border-collapse: collapse; }
+table, td, th	{ border: 1px solid black; padding: 4px; }
 .links a	{ white-space: nowrap; }
+.top	{ vertical-align: top; }
+.left	{ text-align: left; }
+.center	{ text-align: center; }
 .address	{ font-size: 0.9em; font-style: italic; text-align: center; }
 .address address	{ display: inline; }
 .address a img	{ border-width: 0px; }
--->
+//-->
 </style>
 <title>Val Cenis Ski Information</title>
 </head>
@@ -49,13 +54,13 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 <!-- Banner -->
 <div class="banner">
 <div class="title">
-<a class="name" name="Up" href="https://gitlab.tudelft.nl/robberteggermont/skidomain/valcenis/">Val Cenis</a> <img src="../images/f.gif" alt="France" width="45" height="36"> <a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">Ski Domain</a>
+<a class="name" id="Up" href="https://gitlab.tudelft.nl/robberteggermont/skidomain/valcenis/">Val Cenis</a> <img src="../images/f.gif" alt="France" width="45" height="36"> <a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">Ski Domain</a>
 </div>
 <div class="menu">
 <div class="up"><a href="http://val-cenis.haute-maurienne-vanoise.com/">Official Website &gt;</a></div>
 <div class="back"><a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">&lt; Back</a></div>
 <!-- Links -->
-<a href="#Information">Ski Information</a> &middot; <a href="#Links">Links</a> &middot; <a href="webcams.html">Webcams</a>
+<a href="#Information">Ski Information</a> &middot; <a href="webcams.html">Webcams</a>
 <!-- Links -->
 </div>
 </div>
@@ -64,71 +69,54 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 <!-- Border -->
 <div class="content">
 
-<!-- Welcome -->
-<div class="intro">
-<i>Welcome to the <a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/valcenis/"><b>Val Cenis Ski Domain</b></a></i> - the index to all ski related information for Val Cenis.
-<br>I try to keep this site updated with the latest information, please support me in this effort by <a href="mailto:R.Eggermont@hccnet.nl">reporting</a> new resources and/or outdated links.
-</div>
-<!-- Welcome -->
-
 <!-- Item -->
 <div class="item">
-<div class="up">[ <a name="Information" href="#Up">Up</a> ]</div>
-<div class="header">Information</div>
-<hr>
-<!-- Content -->
-<!-- Content -->
-</div>
-<!-- Item -->
-
-<!-- Item -->
-<div class="item">
-<div class="up">[ <a name="Links" href="#Up">Up</a> ]</div>
-<div class="header">Links</div>
+<div class="up">[ <a id="Information" href="#Up">Up</a> ]</div>
+<div class="header">Ski Information</div>
 <hr>
 <!-- Content -->
 <!-- Information table #1 -->
-<table cellspacing="0" cellpadding="4" border="1" class="links">
+<table class="links">
 <thead>
-<tr valign="top" class="menu">
-<td align="left"><b>Stations</b><br>Tourist Offices</td>
-<td align="center"><b>Weather Forecasts</b>
-<br><a href="http://www.meteofrance.com/">M&eacute;t&eacute;o France</a>
-<br><a href="http://www.metcheck.com/SEASONAL/ski.asp">MetCheck</a>
-<br><a href="http://www.snow-forecast.com/">Snow Forecast</a>
+<tr class="top menu">
+<td class="left"><strong>Stations</strong><br>Tourist Offices</td>
+<td class="center"><strong>Weather Forecasts</strong>
+<br><a href="https://meteofrance.com/">M&eacute;t&eacute;o-France</a>
+<br><a href="https://www.metcheck.com/SEASONAL/ski_regions.asp?country=france">MetCheck</a>
+<br><a href="https://www.snow-forecast.com/">Snow Forecast</a>
 </td>
-<td align="center"><b>Ski Information</b>
-<br><a href="http://www.france-montagnes.com/">France Montagnes</a>
-<br><a href="http://www.skiinfo.fr/">Skiinfo</a>
+<td class="center"><strong>Ski Information</strong>
+<!--<br><a href="https://www.france-montagnes.com/">France Montagnes</a>-->
+<br><a href="https://www.skiinfo.fr/">Skiinfo</a>
+<br><a href="https://www.lumiplan.com/produit/les-stations-temps-reel/">Lumiplan</a>
 </td>
-<td align="left"><b>Links</b></td>
+<td class="left"><strong>Links</strong></td>
 </tr>
 </thead>
 <tbody>
-<!-- http://www.cchautemaurienne.com/presentation/la-communaute-de-communes/ -->
 <tr><!-- Val Cenis -->
-<td align="left">	<a href="http://val-cenis.haute-maurienne-vanoise.com/">Val Cenis</a> <span style="font-size: smaller">(Lanslebourg-Mont-Cenis, Lanslevillard, le Haut)</span></td>
-<td align="center">	<a href="http://www.snow-forecast.com/resorts/Val-Cenis/6day/mid">6-Day</a>,
+<td class="left">	<a href="http://val-cenis.haute-maurienne-vanoise.com/">Val Cenis</a> <span style="font-size: smaller">(Lanslebourg-Mont-Cenis, Lanslevillard, le Haut)</span></td>
+<td class="center">	<a href="http://www.snow-forecast.com/resorts/Val-Cenis/6day/mid">6-Day</a>,
 			<a href="http://www.metcheck.com/SEASONAL/ski_forecast_7days.asp?resortID=113">7-Day</a>,
 			<a href="http://www.meteofrance.com/previsions-meteo-montagne/val-cenis/73480">9-Day</a>,
 			<a href="http://www.snow-forecast.com/maps/static/alps/full">Maps</a></td>
-<td align="center">	<a href="http://www.haute-maurienne-vanoise.com/infos-neige/domaine-alpin-val-cenis-vanoise">Snow &amp; Ski</a>,
+<td class="center">	<a href="http://www.haute-maurienne-vanoise.com/infos-neige/domaine-alpin-val-cenis-vanoise">Snow &amp; Ski</a>,
 			<a href="http://www.france-montagnes.com/station/val-cenis-vanoise/bulletins">Snow &amp; Ski</a>,
 			<a href="http://www.skiinfo.fr/alpes-du-nord/val-cenis-vanoise/bulletin-neige.html">Snow &amp; Ski</a></td>
-<td align="left">	<a href="http://www.enimages.net/visites/savoie/valcenis/village/valcenis.html?pano=valcenis0.xml">Ski Map</a>
+<td class="left">	<a href="http://www.enimages.net/visites/savoie/valcenis/village/valcenis.html?pano=valcenis0.xml">Ski Map</a>
 			(<a href="http://www.haute-maurienne-vanoise.com/var/hmv/storage/images/media/fichiers/plan-piste/plan-pistes-val-cenis-vanoise/36754-3-fre-FR/plan-pistes-val-cenis-vanoise.jpg">Large</a>)</td>
 </tr>
 <tr><!-- Termignon -->
-<td align="left">	<a href="http://termignon.haute-maurienne-vanoise.com/">Termignon</a></td>
-<td align="center">	<a href="http://www.meteofrance.com/previsions-meteo-montagne/termignon-la-vanoise/73500">9-Day</a></td>
-<td align="center">	<a href="http://www.france-montagnes.com/station/termignon/bulletins">Snow &amp; Ski</a></td>
-<td align="left">	</td>
+<td class="left">	<a href="http://termignon.haute-maurienne-vanoise.com/">Termignon</a></td>
+<td class="center">	<a href="http://www.meteofrance.com/previsions-meteo-montagne/termignon-la-vanoise/73500">9-Day</a></td>
+<td class="center">	<a href="http://www.france-montagnes.com/station/termignon/bulletins">Snow &amp; Ski</a></td>
+<td class="left">	</td>
 </tr>
 </tbody>
 </table>
 <!-- Information table #2 -->
 <p>
-<b>Haute Maurienne Vanoise, Savoie (73), Alpes du Nord, France</b> <img src="../images/f.gif" width="15" height="12" alt="France">
+<strong>Haute Maurienne Vanoise, Savoie (73), Alpes du Nord, France</strong> <img src="../images/f.gif" width="15" height="12" alt="France">
 </p>
 <ul>
 <li><a href="http://www.avalanche-net.com/enneigement/cartes/alpes-du-nord.php">Avalanche-net</a></li>
@@ -155,7 +143,7 @@ hr	{ background-color: black; border-width: 0px; color: black; height: 1px; }
 <div class="menu">
 <div class="up">[ <a href="#Up">Up</a> ]</div>
 <div class="back"><a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">&lt; Back</a></div>
-<a href="#Information">Ski Information</a> &middot; <a href="#Links">Links</a> &middot; <a href="webcams.html">Webcams</a>
+<a href="#Information">Ski Information</a> &middot; <a href="webcams.html">Webcams</a>
 </div>
 </div>
 <!-- Border -->
