@@ -39,12 +39,12 @@ TABLE.content	{ border : 1px solid #E3E3E3; background-image : url(background.jp
 <a name="Up">
 <table width="100%" cellspacing="0" cellpadding="4" border="0" class="border">
 <tr valign="top" bgcolor="#006699"><td align="left" style="border-bottom: 1px solid #000000;">
-<font size="7"><a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/portesdusoleil/"><font color="#ffffff"><b><i>Portes&nbsp;du&nbsp;Soleil</i></b></font></a> <a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/">Ski&nbsp;Domain<a/></font>
+<font size="7"><a href="https://robberteggermont.github.io/skidomain/portesdusoleil/"><font color="#ffffff"><b><i>Portes&nbsp;du&nbsp;Soleil</i></b></font></a> <a href="https://robberteggermont.github.io/skidomain/">Ski&nbsp;Domain<a/></font>
 </td></tr>
 <tr valign="middle" bgcolor="#E8F4FF"><td align="center">
 <!-- Links -->
 <table width="100%" cellspacing="0" cellpadding="0"><tr valign="middle">
-<td width="25%" align="left"><a href="https://gitlab.tudelft.nl/robberteggermont/skidomain/portesdusoleil/">Home</a></td>
+<td width="25%" align="left"><a href="https://robberteggermont.github.io/skidomain/portesdusoleil/">Home</a></td>
 <td width="50%" align="center" nowrap><a href="index.html#Information">Information</a> &middot; <a href="#Map">Map</a> &middot; <a href="index.html#Links">Links</a> &middot; <a href="index.html#Webcams">Webcams</a></td>
 <td width="25%" align="right"><a href="http://www.portesdusoleil.com/">Official Website</a></td>
 </tr></table>
